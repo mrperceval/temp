@@ -1,0 +1,66 @@
+.ActiveCampaignForm {
+  @apply leading-6 mx-auto;
+}
+
+.ActiveCampaignForm :global ._form-content {
+  @apply max-w-[800px] bg-transparent;
+}
+
+
+.ActiveCampaignForm :global ._form_element {
+  @apply mb-4;
+}
+
+.ActiveCampaignForm :global ._form-label,
+.ActiveCampaignForm :global ._field-wrapper input,
+.ActiveCampaignForm :global ._field-wrapper select {
+  @apply block w-full h-10 py-2 leading-6;
+}
+
+.ActiveCampaignForm :global ._form-label,
+.ActiveCampaignForm :global legend {
+  @apply uppercase font-semibold tracking-wider text-sm inline-block;
+}
+
+.ActiveCampaignForm :global ._field-wrapper input,
+.ActiveCampaignForm :global ._field-wrapper select {
+  @apply px-2 !border-2 !rounded-sm focus:outline-none bg-black;
+}
+
+/* .ActiveCampaignForm :global ._field-wrapper input:focus,
+.ActiveCampaignForm :global ._field-wrapper select:focus {
+  border-color: var(--secondary-color);
+} */
+
+.ActiveCampaignForm :global ._field-wrapper select {
+  @apply appearance-none m-0 border bg-clip-padding bg-[97%_center] bg-no-repeat bg-blend-difference font-normal;
+  background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2213%22%20height%3D%228%22%20viewBox%3D%220%200%2013%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M1.5%201L6.5%206L11.5%201%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E%0A);
+  background-blend-mode: difference;
+}
+
+/* .ActiveCampaignForm :global ._checkbox-radio input[type='checkbox'] {
+  @apply appearance-none float-left h-4 w-4 mr-2 mt-1 border rounded-none focus:outline-none align-top bg-no-repeat bg-center cursor-pointer;
+  background-color: var(--text-bg-color);
+} */
+
+.ActiveCampaignForm :global ._checkbox-radio input[type='checkbox']:checked {
+  @apply bg-blend-difference;
+  background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2210%22%20viewBox%3D%220%200%2012%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M12.0007%201.66668L4.00065%209.66669L0.333984%206.00002L1.27398%205.06002L4.00065%207.78002L11.0607%200.726685L12.0007%201.66668Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E%0A);
+}
+
+.ActiveCampaignForm :global ._form-fieldset {
+  @apply my-8;
+}
+
+/* .ActiveCampaignForm :global ._form-fieldset legend {
+  @apply mb-2 pb-2 border-b;
+} */
+
+.ActiveCampaignForm :global ._submit {
+  @apply block mr-auto text-white px-4 py-2 rounded-sm w-full !bg-primary border-2 border-primary font-bold text-lg;
+  background-color: var(--primary-color);
+}
+
+.ActiveCampaignForm :global ._error-inner {
+  @apply my-1 text-sm text-red-600;
+}

@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+}
+
+body>div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+
+
+/* #signupForm {
+  @apply bg-transparent max-w-xl mx-auto
+} */
+/* 
+#signupForm form#_form_124_ {
+  @apply !bg-transparent !text-white mx-auto;
+}
+
+form#_form_124_ {
+  background: transparent !important;
+}
+
+form#_form_124_._inline-form label._form-label,
+form#_form_124_._inline-form legend._form-label,
+form#_form_124_._inline-form ._row span label,
+form#_form_124_._inline-form ._row label {
+  @apply !text-white;
+}
+
+form#_form_124_._inline-form label._form-label,
+form#_form_124_._inline-form legend._form-label {
+  @apply !text-white uppercase tracking-wider font-semibold text-sm inline-block mb-1;
+}
+
+._form_element {
+  @apply mb-4;
+}
+
+form#_form_124_ ._form_element select,
+form#_form_124_ input#email[type="text"] {
+  @apply h-10 w-full bg-white px-2 m-0 rounded-sm border-2 !border-white text-black;
+}
+
+._checkbox-radio>input {
+  @apply mr-2 w-5 h-5 accent-primary border-amber-500;
+}
+
+form#_form_124_._inline-form ._submit[type="submit"],
+form#_form_124_._inline-form ._submit,
+form#_form_124_ button#_form_124_submit {
+  @apply text-white px-4 py-2 rounded-sm w-full;
+
+}
+
+form#_form_124_ button#_form_124_submit {
+  background: #111 !important;
+  border: 2px solid #fff !important;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+form#_form_124_ button#_form_124_submit:hover {
+  background: #333 !important;
+}
+
+form#_form_124_ button#_form_124_submit:active {
+  transform: scale3d(0.99, 0.99, 0.99);
+}
+
+._error-arrow {
+  @apply !border-t-red-400;
+}
+
+._error-inner {
+  @apply !bg-red-400 !text-white;
+} */
